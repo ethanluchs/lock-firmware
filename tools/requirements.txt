@@ -1,0 +1,8 @@
+# Python >= 3.10. Setup (from repo root, PowerShell):
+#   py -m venv tools\.venv
+#   tools\.venv\Scripts\Activate.ps1
+#   pip install -r tools\requirements.txt
+#
+# Pinned to the bleak 3.x API (BleakGATTProtocolError and the winrt client
+# options used in lock_client.py). A new major version may change these.
+bleak>=3.0.2,<4

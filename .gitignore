@@ -3,3 +3,5 @@ build/
 .vscode/
 *.bin
 *.elf
+.venv/
+__pycache__/
