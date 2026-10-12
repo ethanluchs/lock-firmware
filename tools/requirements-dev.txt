@@ -1,0 +1,6 @@
+# Test-only dependencies for tools/tests (no hardware needed; bleak is faked).
+#   pip install -r tools\requirements-dev.txt
+#   python -m pytest tools/tests -q        (from the repo root)
+-r requirements.txt
+pytest>=8
+pytest-asyncio>=0.24
