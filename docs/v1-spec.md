@@ -5,7 +5,7 @@
 | **Document version** | 0.2 (draft, team decisions applied) |
 | **Date** | 2026-10-12 |
 | **Scope** | Lock firmware and bench hardware for the V1 MVP demo |
-| **Related** | [`docs/ble-spec.md`](ble-spec.md) (BLE byte-level contract), `tools/lock_client.py` (test client) |
+| **Related** | [`docs/ble-spec.md`](ble-spec.md) (BLE byte-level contract), [`docs/ios-integration.md`](ios-integration.md) (iOS start-here guide), `tools/lock_client.py` (test client) |
 | **Status** | Draft. Unresolved items are tagged **OPEN-n** (§12). The choices listed in §13 have been reviewed and decided or accepted by the team. |
 
 ---

@@ -34,10 +34,14 @@ constexpr uint8_t kServoPin = 25; // not a strapping/flash pin (ACT-004)
 // ---- Servo placeholders: OPEN-1 (all values unconfirmed) ----------------------
 constexpr uint32_t kServoPwmHz = 50;
 constexpr uint8_t kServoPwmBits = 14;          // 20 ms period / 16384 steps
-constexpr uint32_t kServoMinPulseUs = 500;     // OPEN-1: pulse at 0 deg
-constexpr uint32_t kServoMaxPulseUs = 2500;    // OPEN-1: pulse at 180 deg
+// SG90 bench values (unloaded, laptop USB via VIN); final values pending OPEN-1.
+// Pulses/angles: clean sweep, no end-stop buzz. Original placeholders were
+// 500 / 2500 us, locked 0, unlocked 90. Travel time is NOT yet measured: it
+// finishes visibly before 1 s but is left at 1000 ms (it is T_act, STATE-003).
+constexpr uint32_t kServoMinPulseUs = 1000;    // OPEN-1: pulse at 0 deg
+constexpr uint32_t kServoMaxPulseUs = 2000;    // OPEN-1: pulse at 180 deg
 constexpr uint8_t kServoLockedDeg = 0;         // OPEN-1
-constexpr uint8_t kServoUnlockedDeg = 90;      // OPEN-1
+constexpr uint8_t kServoUnlockedDeg = 180;     // OPEN-1
 constexpr uint32_t kServoTravelMs = 1000;      // OPEN-1
 
 // T_act: the single compile-time actuation time (STATE-003).
